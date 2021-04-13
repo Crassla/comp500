@@ -1,0 +1,18 @@
+#title {
+    text-align: center;
+}
+
+#nav {
+    margin: auto;
+    text-align: center;
+}
+
+#body {
+    margin-left:auto;
+	margin-right: auto;
+	margin-top: 0.1%;
+	background:whitesmoke;
+	width: 80%;
+	padding: 0.1%;
+	border: solid darkgrey 0.5px;
+}
