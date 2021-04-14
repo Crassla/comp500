@@ -23,12 +23,165 @@
     </nav>
     <div id=background>
         <div id="content">
-          <div id="text">
-            <h2 style="font-size:2.15vw;" text-align="left">Part 2:</h2>
-            <div class="box">
-                <h3><u>Question 1: Setting up three different Linux operating system (6 marks):</u></h3>
-            </div><!--box-->
-          </div><!--text-->
+          <h2 style="font-size:2.15vw;" text-align="left">Part 2:</h2>
+          <div class="box">
+              <h3><u>Question 1: Setting up three different Linux operating system (6 marks):</u></h3>
+              <h3>
+              <p><u>Ubuntu: </u></p>
+              <p><img src=images/working7.jpg class="image"></p>
+              <p><u>Kali: </u></p>
+              <p><img src=images/working8.jpg class="image"></p>
+              <p><u>Parrot: </u></p>
+              <p><img src=images/working9.jpg class="image"></p>
+              </h3><br>
+              <h3><u>Question 2: Manipulate directory structures in Unix/Linux (24 marks – 2 marks each)</u></h3>
+              <h3>
+              <p>Use the OS that you set up from Question 1. Assume you are started at your home directory.</p>
+              <p>Let your first name be XXX, so XXX = “Mark”, if your name is Mark. XXX from now on refers to your first name (e.g. Mark).</p>
+              <p>XXX = Alexandria</p>
+              </h3>
+              <h3 class="table">
+                <table>
+                  <colgroup>
+                    <col span="1" style="width: 40%;">
+                    <col span="1" style="width: 30%;">
+                    <col span="1" style="width: 30%;">
+                  </colgroup>             
+                  <tr>
+                    <th>Requirement:</th>
+                    <th>Command:</th>
+                    <th>Output: </th>
+                  </tr>
+                  <tr>
+                    <td>Perform a command that displays the absolute path of your home directory (your current location).</td>
+                    <td>pwd</td>
+                    <td><img src=images/screen1.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Create a new directory inside your home directory and name it “Alexandria”</td>
+                    <td>mkdir Alexandria</td>
+                    <td>N/A no output</td>
+                  </tr>
+                  <tr>
+                    <td>Now navigate to the Alexandria directory and create directory Alexandria-HOMEWORK and change your current working directory to Alexandria-HOMEWORK.</td>
+                    <td>
+                      cd Alexandria<p>
+                      mkdir Alexandria-HOMEWORK<p>
+                      cd Alexandria-HOMEWORK
+                    </td>
+                    <td>N/A no output</td>
+                  </tr>
+                  <tr>
+                    <td>Create three new subdirectories called Part1, Part2, and Part3 in the Alexandria-HOMEWORK directory.</td>
+                    <td>
+                      mkdir Part1<p>
+                      mkdir Part2<p>                
+                      mkdir Part3<p>
+                    </td>
+                    <td>N/A no output</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Create a new file called “MyFave.txt” using the touch command and insert three lines into the file (you may use echo command and >> command).<br>
+                      a. The first line should contain your name and ID number.<br>                                           
+                      b. The second line should be the first sentence of your favourite song.<br>
+                      c.  The third line should be the name of your favourite movie.<br>
+                      And display the contents of the file “MyFave.txt” to the standard output screen (you may use cat command).
+                    </td>
+                    <td>
+                      touch MyFave.txt<p>
+                      echo Alexandria Meyer 20104599 >> MyFave.txt<p>
+                      echo Are we gonna have a problem >> MyFave.txt<p>
+                      echo Revenge of the Sith >> MyFave.txt<p>
+                      cat MyFave.txt<p>
+                      </td>
+                    <td><img src=images/screen2.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Display the number of words in the file “MyFave.txt” (you may use wc command).</td>
+                    <td>wc -w MyFave.txt</td>
+                    <td><img src=images/screen3.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Copy the file “MyFave.txt” to directory “Part1” and rename it to “MyFaveCopy.txt”.<br>
+                      Make another copy of “MyFaveCopy.txt” just made in directory “Part1” and name it “MyFaveCopyCopy.txt” (also store in the same directory “Part1”).<br>
+                      Then, display the contents of the directory “Part1” using the long format.<br>
+                    </td>
+                    <td>mkdir Alexandria</td>
+                    <td><img src=images/screen4.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Copy all the contents of directory “Part1” to directory “Part2” and display the contents of the directory “Part2”.</td>
+                    <td>
+                      cd ..<p>
+                      cp -a Part1/. Part2<p>             
+                      ls Part2<p>
+                      </td>
+                    <td><img src=images/screen5.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td><p>Assume that you are now at the current working directory Alexandria-HOMEWORK; create 15 new files (in directory Alexandria-HOMEWORK) named as follows:</p><p>
+                      a. FICT.bak<br>                
+                      b. unix.txt<br>
+                      c.  thistest.bak<br>
+                      d. wumbo.file<br>
+                      e. wumbology.txt<br>
+                      f.  moreThings.woot<br>
+                      g. FundaIT.txt<br>
+                      h. doodad.text<br>
+                      i.   coursetxt<br>
+                      j.   Test-1-2.xtxt<br>
+                      k. Test-2-2.xtxt<br>
+                      l.  Test-1-1.bak<br>
+                      m.  Test-1.txt<br>
+                      n. File-1.bat<br>
+                      o. Assignment1.file<br></p>
+                      And display a listing of all the files and directories in long format in the current working directory Alexandria-HOMEWORK.</td>
+                    <td>
+                      touch FICT.bak<p></p>
+                      touch unix.txt<p></p>                  
+                      touch thistest.bak<p></p>                     
+                      touch wumbo.file<p></p>                  
+                      touch wumbology.txt<p></p>
+                      touch moreThings.woot<p></p>
+                      touch FundaIT.txt<p></p>
+                      touch doodad.text<p></p>
+                      touch coursetxt<p></p>
+                      touch Test-1-2.xtxt<p></p>
+                      touch Test-2-2.xtxt<p></p>
+                      touch Test-1-1.bak<p></p>
+                      touch Testy-1.txt<p></p>
+                      touch File-1.bat<p></p>
+                      touch Assignment1.file<p></p>
+                      ls -l<p></p>
+                      </td>
+                    <td><img src=images/screen6.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Display a listing of all the files in the current working directory ending with the letter ‘t’ using one command, e.g. unix.txt or doodad.text.</td>
+                    <td>ls *t</td>
+                    <td><img src=images/screen7.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Display a listing of all the files in the current working directory starting with ‘T’ and ending with ‘t’ using one command, e.g. Test-1.txt.</td>
+                    <td>ls T*t</td>
+                    <td><img src=images/screen8.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Move all the files containing letter ‘t’ to the directory Part3 using one command.</td>
+                    <td>mv .*t* Part3</td>
+                    <td><img src=images/screen8.png class="image"></td>
+                  </tr>
+                  <tr>
+                    <td>Display a listing of the contents of the current directory Alexandria-HOMEWORK. All files that contain letter ‘t’ should now be gone.</td>
+                    <td>ls</td>
+                    <td><img src=images/screen9.png class="image"></td>
+                  </tr>
+                </table>
+                </h3>
+              </table>
+          </div><!--box--> 
         </div><!--content-->
     </div><!--background-->
     <div id="footer">

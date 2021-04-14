@@ -23,12 +23,104 @@
     </nav>
     <div id=background>
         <div id="content">
-          <div id="text">
-            <h2 style="font-size:2.15vw;" text-align="left">Part 1:</h2>
-            <div class="box">
-                <h3><u>Question 1: Converting Between Number Bases (6 marks):</u></h3>
-            </div><!--box-->
-          </div><!--text-->
+          <h2 style="font-size:2.15vw;" text-align="left">Part 1:</h2>
+          <div class="box">
+            <h3><u>Question 1: Converting Between Number Bases (6 marks):</u></h3>
+            <p><h3>Consider A is the last 3 digits of your AUT ID number, so if your ID is 123456 then A = 456.</p>
+            <p>My Id: 20104599</p>
+            <p>Perform the following conversions between different number based systems (3 marks for each):<br>Assume the number A is a decimal number (base 10):<br>A = 599
+            </p>
+            <p><u>1. 	Convert 599 (from Decimal) to Binary</u></p>
+            <p>
+              599 / 2  = 299 r 1<br>
+              299 / 2 = 149 r 1<br>
+              149 / 2 = 74 r 1<br>
+              74 / 2 = 37 r 0<br>
+              37 / 2 = 18 r 1<br>
+              18 / 2 = 9 r 0<br>
+              9 / 2 = 4 r 1<br>
+              4 / 2 = 2 r 0<br>
+              2 / 2 = 1 r 0<br>
+              1 / 2 = 0 r 1<br>
+            </p>
+            <p>Therefore 599<sub>10</sub> in base 2 = 1001010111<sub>2</sub></p>
+            <p><u>2. 	Convert 599 (from Decimal) to Hexadecimal</u></p>
+            <p>
+              599 / 16 = 37 r 7<br>
+              37 / 16 = 2 r 5<br>
+              2 / 16 = 0 r 2<br>           
+            </p>
+            <p>Therefore 599<sub>10</sub> in base 16 = 257<sub>16</sub></p>
+            </h3><br>
+            <h3><u>Question 2: Unsigned Arithmetic Operations (6 marks):</u></h3>
+            <p><h3>Carry out the operations, assume that the numbers are unsigned and unlimited bits to represent:</p>
+            <p><u>a) 	Base 2: 01101111 + 11001101</u></p>
+            <p>
+              A = 10<br>
+              B = 11<br>
+              C = 12<br>
+              D = 13<br>
+              E = 14<br>
+              F = 15<br>
+            </p>
+            <img src=images/working1.jpg class="image">
+            <p>= 100111100</p>
+            <p><u>b)	Base 16: DBEAF1CA + F1CAF1CA</u></p>
+            <p>
+              A = 10<br>
+              B = 11<br>
+              C = 12<br>
+              D = 13<br>
+              E = 14<br>
+              F = 15<br>
+            </p>
+            <img src=images/working2.jpg class="image">
+            <p>= 1CDB5E394</p>
+            </h3><br>
+            <h3><u>Question 3: Bitwise Logical Operations (12 marks):</u></h3>
+            <p><h3>Assume that numbers are represented as signed, 8-bit 2’s complement representation.</p>
+            <p>Carry out the following operations (2 marks each):</p>
+            <p><u>a) 	0011 1110 | 0111 0001 (note: OR operation)</u></p>
+            <img src=images/working3.jpg class="image">
+            <p>= 0111 1111</p>
+            <p><u>b)	1010 1011  &  0100 1101 (note: AND operation)</u></p>
+            <img src=images/working4.jpg class="image">
+            <p>= 0000 1001</p>
+            <p><u>c) 	1010 1010  ^ 1101 1100 (note: Exclusive OR operation)</u></p>
+            <img src=images/working5.jpg class="image">
+            <p>= 0111 0110</p>
+            <p><u>d)	0011 0101 << 4 (note: Shift left arithmetic operation)</u></p>
+            <img src=images/working6.jpg class="image">
+            <p>= 0101 0000</p>
+            </h3><br>
+            <h3><u>Question 4: 2’s Complement Conversion (5 marks):</u></h3>
+            <p><h3>Assume that numbers are represented as signed, 8-bit 2’s complement representation.</p>
+            <p>If the last two digits of your AUT ID is B, if your ID is 123456 then B = 56.</p>
+            <p>Work out the following question (replace B with your last 2 digits of your ID):</p>
+            <p>B = 99</p>
+            <p>
+              99 / 2 = 49 r 1<br>
+              49 / 2 = 24 r 1<br>
+              24 / 2 = 12 r 0<br>
+              12 / 2 = 6 r 0<br>
+              6 / 2 = 3 r 0<br>
+              3 / 2 = 1 r 1<br>
+              1 / 2 = 0 r 1<br>
+            </p>
+            <p>99<sub>10</sub> = 01100011<sub>2</sub></p>
+            <p>01100011 inverted<br>= 10011100</p>
+            <p>10011100 + 1<br>= 10011101</p>
+            </h3><br>
+            <h3><u>Question 5: ASCII Characters (6 marks):</u></h3>
+            <p><h3>The Appendix gives a table for 7-bit ASCII. Using this table, we can work out the hexadecimal value corresponding to the encoding of this ASCII string “ABBA” (assume each 7-bit code occupies the space of an 8-bit byte with the MSB=0) as 41424241<sub>16</sub></p>
+            <p>Find the hexadecimal and Binary values corresponding to your full name (note that there are spaces in the string); answer the following:</p>
+            <p><u>a) 	Your full name in Hexadecimal (base 16)</u></p>
+            <p>Alexandria Meyer<br>
+            = 416C6578616E64726961204D65796572</p>
+            <p><u>b)	How many bits are used (do not count the end of string byte)</u></p>
+            <p>= 16 x 8<br>= 128</p>
+            </h3><br>
+          </div><!--box-->
         </div><!--content-->
     </div><!--background-->
     <div id="footer">
