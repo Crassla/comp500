@@ -1,5 +1,5 @@
 body {
-	background: whitesmoke;
+	background: lightgreen;
  }
   
  header{
@@ -53,14 +53,14 @@ nav h2:hover{
 
 #background{
 	padding: 0.5%;
-	background: #ebebeb;
+	background: orange;
 }
 
 #content{
 	margin-left:auto;
 	margin-right: auto;
 	margin-top: 0.1%;
-	background:whitesmoke;
+	background: pink;
 	width: 80%;
 	padding: 0.1%;
 	border: solid darkgrey 0.5px;
